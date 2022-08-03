@@ -2,6 +2,7 @@ package services
 
 import (
 	"bookstore_user-api/domain/users"
+	"bookstore_user-api/utils/date_utils"
 	"bookstore_user-api/utils/errors"
 )
 
@@ -19,6 +20,8 @@ func CreateUser(user users.User) (*users.User, *errors.RestErr) {
 		return nil, err
 	}
 
+	user.Status = users.StatusActive
+	user.DateCreated = date_utils.GetNowDatabaseFormat()
 	if err := user.Save(); err != nil {
 		return nil, err
 	}
@@ -62,4 +65,9 @@ func DeleteUser(userId int64) *errors.RestErr {
 	user := &users.User{Id: userId}
 
 	return user.Delete()
+}
+
+func Search(status string) ([]users.User, *errors.RestErr) {
+	dao := &users.User{}
+	return dao.FindByStatus(status)
 }
