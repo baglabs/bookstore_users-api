@@ -4,6 +4,7 @@ go 1.18
 
 require (
 	github.com/baglabs/bookstore_oauth-go v0.0.0-20220822080809-cc43a1b2a0dd
+	github.com/baglabs/bookstore_utils-go v0.0.0-20220823042319-dbba8f22f2fd
 	github.com/gin-gonic/gin v1.8.1
 	github.com/go-sql-driver/mysql v1.6.0
 	github.com/goccy/go-json v0.9.11
@@ -33,3 +34,5 @@ require (
 )
 
 replace github.com/baglabs/bookstore_oauth-go => ../bookstore_oauth-go
+
+replace github.com/baglabs/bookstore_utils-go => ../bookstore_utils-go
