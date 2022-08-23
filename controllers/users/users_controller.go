@@ -1,11 +1,12 @@
 package users
 
 import (
-	"bookstore_user-api/domain/users"
-	"bookstore_user-api/services"
-	"bookstore_user-api/utils/errors"
 	"net/http"
 	"strconv"
+
+	"github.com/baglabs/bookstore_user-api/domain/users"
+	"github.com/baglabs/bookstore_user-api/services"
+	"github.com/baglabs/bookstore_user-api/utils/errors"
 
 	"github.com/baglabs/bookstore_oauth-go/oauth"
 	"github.com/gin-gonic/gin"

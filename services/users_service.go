@@ -1,10 +1,10 @@
 package services
 
 import (
-	"bookstore_user-api/domain/users"
-	"bookstore_user-api/utils/crypto_utils"
-	"bookstore_user-api/utils/date_utils"
-	"bookstore_user-api/utils/errors"
+	"github.com/baglabs/bookstore_user-api/domain/users"
+	"github.com/baglabs/bookstore_user-api/utils/crypto_utils"
+	"github.com/baglabs/bookstore_user-api/utils/date_utils"
+	"github.com/baglabs/bookstore_user-api/utils/errors"
 )
 
 var (

@@ -1,12 +1,13 @@
 package users
 
 import (
-	"bookstore_user-api/datasources/mysql/users_db"
-	"bookstore_user-api/logger"
-	"bookstore_user-api/utils/errors"
-	"bookstore_user-api/utils/mysql_utils"
 	"fmt"
 	"strings"
+
+	"github.com/baglabs/bookstore_user-api/datasources/mysql/users_db"
+	"github.com/baglabs/bookstore_user-api/logger"
+	"github.com/baglabs/bookstore_user-api/utils/errors"
+	"github.com/baglabs/bookstore_user-api/utils/mysql_utils"
 )
 
 const (

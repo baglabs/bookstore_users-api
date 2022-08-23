@@ -1,8 +1,9 @@
 package users
 
 import (
-	"bookstore_user-api/utils/errors"
 	"strings"
+
+	"github.com/baglabs/bookstore_user-api/utils/errors"
 )
 
 const (
