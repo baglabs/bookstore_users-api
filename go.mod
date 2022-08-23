@@ -3,6 +3,7 @@ module bookstore_user-api
 go 1.18
 
 require (
+	github.com/baglabs/bookstore_oauth-go v0.0.0-20220822062129-044b5ec142db
 	github.com/gin-gonic/gin v1.8.1
 	github.com/go-sql-driver/mysql v1.6.0
 	github.com/goccy/go-json v0.9.10
@@ -30,3 +31,5 @@ require (
 	google.golang.org/protobuf v1.28.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
+
+replace github.com/baglabs/bookstore_oauth-go => ../bookstore_oauth-go
